@@ -3,7 +3,7 @@
   <div class="nav-wrapper">
     <a href="page-title">{{ page.title }}</a>
     {{ site.name }}
-    <ul class="side-nav fixed" id="slide-out">
+    <ul class="side-nav fixed hide-on-small-only" id="slide-out">
       <li class="logo"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
       {% for page in site.pages %}
       {% if page.title %}
