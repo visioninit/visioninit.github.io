@@ -1,17 +1,19 @@
 <header>
+  <div class="navbar-fixed">
 <nav>
   <div class="nav-wrapper">
     <a href="page-title">{{ page.title }}</a>
     {{ site.name }}
-    <ul class="side-nav fixed hide-on-small-only" id="slide-out">
+    <div class="icons right"><i class="mdi-action-group-work"></i></div>
+    <ul class="side-nav fixed" id="slide-out">
       <li class="logo"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
-      {% for page in site.pages %}
-      {% if page.title %}
-      <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-      {% endif %}
-      {% endfor %}
+      <li><a class="site-title" href="/#Profile"><i class="large mdi-action-assignment-ind left"></i>Profile</a></li>
+      <li><a class="site-title" href="/#Experience"><i class="large mdi-navigation-apps left"></i>Experience</a></li>
+      <li><a class="site-title" href="/#Education"><i class="large mdi-social-school left"></i>Education</a></li>
+      <li><a class="site-title" href="/blog"><i class="large mdi-action-speaker-notes left"></i>Blog</a></li>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </div>
 </nav>
+    </div>
 </header>
