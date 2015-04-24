@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body data-spy="scroll" data-target="side-nav">
 
     {% include header.html %}
     <main>
@@ -19,6 +19,7 @@
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
+        $('body').scrollSpy({target: '#side-nav-spy'})
       })
     </script>
   </body>
